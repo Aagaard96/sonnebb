@@ -17,14 +17,14 @@ export default function OmBodysds() {
       <section>
         <h3>Hvad er Body SDS?</h3>
         <p>
-          Body SDS (Body Self Development's System) er en holistisk
+          Body SDS (Body Self Development&apos;s System) er en holistisk
           behandlingsmetode udviklet i Danmark, der kombinerer
           <span>massage</span>, <span>samtale</span>,
           <span>åndedrætsøvelser</span> og <span>bevægelse</span> for at arbejde
           med både krop og sind.
         </p>
         <p>
-          Systemet blev udviklet af Ole Kåre Føli i 1980'erne og har til formål
+          Systemet blev udviklet af Ole Kåre Føli i 1980&apos;erne og har til formål
           at frigøre fysiske og følelsesmæssige spændinger, forbedre
           kropsbevidsthed og fremme generel velvære.
         </p>
