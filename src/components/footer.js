@@ -5,12 +5,12 @@ export default function Footer() {
     return (
 
 
-        <footer className="bg-gray-500">
+        <footer className="bg-zinc-200">
             <div className="mx-auto w-full max-w-screen-lg p-8 py-6 lg:py-10">
                 <div className="md:flex md:justify-between items-center">
                     <div className="mb-6 md:mb-0">
                         <a href="/" className="flex items-center justify-left">
-                            <Image src="/sonnebb_logo_hvid.svg"
+                            <Image src="/sonnebb_logo_black.svg"
                                 height={200}
                                 width={200}
                                 className="rounded-none" alt="Willum Logo" />
@@ -18,13 +18,13 @@ export default function Footer() {
                     </div>
                     <div className="flex justify-between sm:gap-6">
                         <div>
-                            <h2 className="text-sm font-semibold text-white uppercase ">Sonne Body &amp; Balance</h2>
-                            <ul className="text-white font-medium">
+                            <h2 className="text-sm font-semibold uppercase ">Sonne Body &amp; Balance</h2>
+                            <ul>
                                 <li>
                                     <p>Annasvej 1</p>
                                 </li>
                                 <li>
-                                    <p >2690 Karlslunde</p>
+                                    <p>2690 Karlslunde</p>
                                 </li>
                                 <li>
                                     <p>CVR: 4162 5317</p>
@@ -32,20 +32,20 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="text-sm font-semibold text-white uppercase ">Kontakt:</h2>
-                            <ul className="text-white font-medium">
+                            <h2 className="text-sm font-semibold uppercase ">Kontakt:</h2>
+                            <ul >
                                 <li>
-                                    <Link className="text-white" href="mailto:morten@sonnebb.dk">morten@sonnebb.dk</Link>
+                                    <Link href="mailto:morten@sonnebb.dk">morten@sonnebb.dk</Link>
                                 </li>
                                 <li>
-                                    <Link className="text-white" href="tel:+4525378860">+45 2537 8860</Link>
+                                    <Link href="tel:+4525378860">+45 2537 8860</Link>
                                 </li>
                                 <li>
                                     <Link
                                         isExternal
                                         href="https://www.instagram.com/sonnebodyandbalance/"
                                     >
-                                        <FaInstagram className="text-orange-500" size={25} />
+                                        <FaInstagram className="text-[#599788]" size={25} />
                                     </Link>
                                 </li>
                             </ul>

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-export default function About() {
+export default function OmMorten() {
     return (
-        <section className="min-h-screen max-w-6xl mx-auto">
-            <div className="flex gap-10">
-                <div className="max-w-xl mx-auto flex flex-col gap-5">
-                    <h2 className="text-4xl mb-5 uppercase">Hvem er <br /> Morten Sonne?</h2>
+        <section>
+            <div className="flex flex-col gap-10">
+                <div className="max-w-xl mx-auto flex flex-col gap-5 text-base ">
+                    <h2 className="text-4xl leading-none">Morten Sonne <br /> <span className="text-xl font-semibold text-[#63827B]">Autoriseret BODY SDS behandler </span></h2>
                     <p>
                         Jeg kommer oprindelig fra cykelsporten, hvor jeg i slutningen af
                         90’erne og starten af 00’erne kørte som professionel i 5 år. Jeg
@@ -55,7 +55,7 @@ export default function About() {
                         igen.
                     </p>
                 </div>
-                <Image src="/profiledummy.jpg" width={200} height={200} alt="Morten Sonne" className="w-2/3 h-fit" />
+                <Image src="/profiledummy.jpg" width={300} height={200} alt="Morten Sonne" className="mx-auto rounded-md" />
             </div>
         </section>
     );
