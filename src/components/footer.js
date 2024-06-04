@@ -33,19 +33,19 @@ export default function Footer() {
                         </div>
                         <div>
                             <h2 className="text-sm font-semibold uppercase ">Kontakt:</h2>
-                            <ul >
+                            <ul>
                                 <li>
-                                    <Link href="mailto:morten@sonnebb.dk">morten@sonnebb.dk</Link>
+                                    <Link className="text-moss" href="mailto:morten@sonnebb.dk">Morten@sonnebb.dk</Link>
                                 </li>
                                 <li>
-                                    <Link href="tel:+4525378860">+45 2537 8860</Link>
+                                    <Link className="text-moss" href="tel:+4525378860">+45 2537 8860</Link>
                                 </li>
                                 <li>
                                     <Link
                                         isExternal
                                         href="https://www.instagram.com/sonnebodyandbalance/"
                                     >
-                                        <FaInstagram className="text-[#599788]" size={25} />
+                                        <FaInstagram className="text-moss" size={25} />
                                     </Link>
                                 </li>
                             </ul>

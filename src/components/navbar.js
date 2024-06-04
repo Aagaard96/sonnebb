@@ -12,19 +12,19 @@ export default function Navbar() {
     const isActiveBooking = pathname === "/booking";
 
     return (
-        <nav className="bg-zinc-200 p-10 text-[#63827B] font-semibold items-end">
+        <nav className="bg-zinc-200 p-10 text-moss font-semibold items-end">
             <div className="max-w-6xl flex items-end justify-between mx-auto">
-                <Link href="/">                
-                <Image
-                    src="/sonnebb_logo_black.svg"
-                    width={200}
-                    height={200}
-                    alt="test"
-                    className="justify-self-center place-self-center"
-                />
+                <Link href="/">
+                    <Image
+                        src="/sonnebb_logo_black.svg"
+                        width={200}
+                        height={200}
+                        alt="test"
+                        className="justify-self-center place-self-center"
+                    />
                 </Link>
                 <ul className="justify-around text-sm uppercase flex h-[50px]">
-                    <div className="bg-zinc-100 flex text-center rounded-lg divide-x-2 divide-[#63827B] border-[#63827B] border-2">
+                    <div className="bg-zinc-100 flex text-center rounded-lg divide-x-2 divide-moss border-moss border-2">
                         <NavItem href="/om-body-sds" isActive={isActiveOmBodySDS}>om body sds</NavItem>
                         <NavItem href="/om-mig" isActive={isActiveOmMig}>om morten</NavItem>
                         <NavItem href="/videoer" isActive={isActiveVideoer}>videoer</NavItem>
@@ -37,7 +37,7 @@ export default function Navbar() {
 }
 
 const NavItem = ({ href, isActive, external, children }) => {
-    const classNames = `flex items-center justify-center w-[125px] hover:text-zinc-100 hover:bg-[#63827B]/50 transition duration-300 ease-in-out ${isActive ? "bg-[#63827B]/50 text-zinc-100" : ""}`;
+    const classNames = `flex items-center justify-center w-[125px] hover:text-zinc-100 hover:bg-moss/50 transition duration-300 ease-in-out ${isActive ? "bg-moss/50 text-zinc-100" : ""}`;
 
     return (
         <li className={classNames}>

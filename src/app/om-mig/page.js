@@ -3,37 +3,52 @@ import React from "react";
 
 export default function OmMorten() {
     return (
-        <section>
-            <div className="flex flex-col gap-10">
-                <div className="max-w-xl mx-auto flex flex-col gap-5 text-base ">
-                    <h2 className="text-4xl leading-none">Morten Sonne <br /> <span className="text-xl font-semibold text-[#63827B]">Autoriseret BODY SDS behandler </span></h2>
-                    <p>
-                        Jeg kommer oprindelig fra cykelsporten, hvor jeg i slutningen af
-                        90’erne og starten af 00’erne kørte som professionel i 5 år. Jeg
-                        kørte flere år i Italien og deltog bl.a. 4 gange i VM.
-                    </p>
-                    <p>
-                        I 2012 begyndte jeg at træne mere seriøst med triatlon, som jeg i
-                        flere år havde snuset til på motionsplan. På 5 år, deltog jeg 3
-                        gange i VM på Hawaii, med en 4. plads som bedste resultat.
-                    </p>
-                    <p>
-                        Det hele fik dog en brat afslutning, da jeg i 2017 fik en blodprop i
-                        hjertet imens jeg en tirsdag eftermiddag cyklede hjem fra arbejde.
-                        Den oplevelse satte en masse tanker i gang, for hvordan kunne en
-                        sportsmand i topform og med deltagelse i konkurrencer på topniveau
-                        få en blodprop ud af det blå? Jeg spiste sundt, røg ikke og drak kun
-                        sjælendt alkohol.
-                    </p>
-                    <p>
-                        Faktisk mente jeg selv, at jeg skulle passere 100 år – ovenikøbet
-                        med en god margin.
-                    </p>
+        <section className="my-20">
+            <div className="flex gap-20 max-w-5xl mx-auto">
+                <div className="flex-1 flex flex-col text-lg">
+                    <div className="mb-10">
+                        <h3 className="text-4xl font-bold leading-none">Morten Sonne</h3>
+                        <h2 className="text-xl font-semibold text-moss">Autoriseret BODY SDS behandler</h2>
+                    </div>
+                    <div className="flex flex-col gap-5">
+                        <p>
+                            Jeg kommer oprindelig fra cykelsporten, hvor jeg i slutningen af
+                            90&apos;erne og starten af 00&apos;erne kørte som professionel i 5 år. Jeg
+                            kørte flere år i Italien og deltog bl.a. 4 gange i VM.
+                        </p>
+                        <p>
+                            I 2012 begyndte jeg at træne mere seriøst med triatlon, som jeg i
+                            flere år havde snuset til på motionsplan. På 5 år, deltog jeg 3
+                            gange i VM på Hawaii, med en 4. plads som bedste resultat.
+                        </p>
+                        <p>
+                            Det hele fik dog en brat afslutning, da jeg i 2017 fik en blodprop i
+                            hjertet imens jeg en tirsdag eftermiddag cyklede hjem fra arbejde.
+                            Den oplevelse satte en masse tanker i gang, for hvordan kunne en
+                            sportsmand i topform og med deltagelse i konkurrencer på topniveau
+                            få en blodprop ud af det blå? Jeg spiste sundt, røg ikke og drak kun
+                            sjælendt alkohol.
+                        </p>
+                        <p>
+                            Faktisk mente jeg selv, at jeg skulle passere 100 år - ovenikøbet
+                            med en god margin.
+                        </p>
+                    </div>
+                </div>
+                <div className="">
+                    <Image src="/profiledummy.jpg" width={400} height={200} alt="Morten Sonne" className="mx-auto rounded-md shadow-moss/50 shadow-lg" />
+                </div>
+            </div>
+            <div className="flex gap-20 max-w-5xl mx-auto mt-10">
+                <div className="flex items-center">
+                    <Image src="/omSonne.jpg" width={400} height={200} alt="Morten Sonne" className="mx-auto rounded-md shadow-moss/50 shadow-lg" />
+                </div>
+                <div className="flex-1 flex flex-col gap-5 text-lg">
                     <p>
                         Efter et længere restitutionsforløb, fandt jeg ud af én ting, som
                         slet ikke havde været inde i billedet; ved at været så fokuseret på
                         den fysiske del af træningen og hele tiden presse kravene til
-                        kroppens formåen opad, havde jeg overhørt – eller undertrykt –
+                        kroppens formåen opad, havde jeg overhørt - eller undertrykt -
                         kroppens advarselssignaler. Og ved den intensive triatlontræning
                         havde jeg snydt krop og hoved til at tro, at jeg også var mentalt
                         ovenpå, selvom den psykiske tilstand kørte på pumperne med træthed,
@@ -55,8 +70,10 @@ export default function OmMorten() {
                         igen.
                     </p>
                 </div>
-                <Image src="/profiledummy.jpg" width={300} height={200} alt="Morten Sonne" className="mx-auto rounded-md" />
+
             </div>
         </section>
     );
 }
+
+
