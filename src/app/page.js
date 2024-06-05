@@ -1,8 +1,9 @@
+import { NextUIProvider } from "@nextui-org/react";
 import BookBtn from "@/components/bookbtn";
 import Reviews from "@/components/reviews";
 import Services from "@/components/service";
-import { NextUIProvider } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,34 +13,47 @@ export default function Home() {
         <BookBtn />
 
         {/* HERO */}
-        <section className="bg-zinc-200 w-full h-[400px]">
-          <div className="relative flex justify-between items-center max-w-6xl mx-auto">
-            <div className="font-semibold">
-              <div className="mb-8 flex flex-col gap-2">
-                <h1 className="text-5xl">Sonne Body &amp; Balance</h1>
-                <h3 className="text-moss text-2xl">
-                  Autoriseret Body SDS Kropsterapeut
-                </h3>
-              </div>
-              <button className="px-8 py-4 bg-moss rounded-md text-white hover:bg-moss/50 uppercase border-2 border-moss">
-                Book her
-              </button>
+        <section className=" bg-[url('/heromobile.jpg')] lg:bg-[url('/sonnenakke.JPEG')] bg-cover bg-no-repeat  flex flex-col items-center justify-center h-screen">
+          <div className="flex flex-col text-center font-medium max-w-6xl font-playfair">
+            <h1 className="text-5xl md:text-4xl lg:text-[150px]">Body Session</h1>
+            <h3 className="text-4xl md:text-2xl lg:text-[80px] lg:mt-28">
+              50 min./950.kr
+            </h3>
+            <div className="text-sm md:text-xl mx-5 max-w-2xl md:mx-auto p-5 rounded-md font-inter md:mt-10">
+              <p>Body SDS er et af verdens mest effektive behandlings- og træningssystemer.</p>
+              <p>Effektivt mod migræne, sportsskader, stress, angst, traumer, smerte, piskesmæld, kold skulder, tennisalbue, kontorskader, ryg- og nakkeproblemer, eksem, allergi, astma og fordøjelsesproblemer.</p>
             </div>
-            <Image
-              className="rounded-md"
-              src="/hero-dummy.png"
-              width={600}
-              height={500}
-              alt="Hero Image"
-            />
           </div>
+          <Link href="https://sonne-bodybalance.planway.com/?fbclid=IwAR14JyAShdeG4tOl3EPBHtMp_onLHOROfLiVgrawWiVyBwH5xlHJw_SrvtE" className="py-2 px-4 lg:px-8 lg:py-4 bg-moss rounded-md text-white hover:bg-orangeAccent/50 uppercase border-2 border-text mt-4">
+            Book tid
+          </Link>
+        </section>
+
+        {/* SERVICES */}
+        <section className="py-20 px-10 bg-gradient-to-l from-bgAccent to-bgMain">
+          <div className="text-center max-w-6xl mx-auto  text-lg text-balance mb-10 lg:mb-20">
+            <h3 className="text-2xl lg:text-4xl font-bold mb-5">
+              <span className="text-moss">Body SDS</span> - Hvad kan det gøre for mig?
+            </h3>
+            <p>
+              Uanset om det handler om fysiske smerter, stress, angst eller
+              andre helbredsmæssige udfordringer, har Body SDS vist sig at være
+              effektiv.
+            </p>
+            <p className="mt-2">
+              Denne holistiske tilgang til kroppen hjælper med at løsne
+              spændinger, forbedre kropsholdningen, øge energiniveauet og fremme
+              en dybere følelse af ro og balance.
+            </p>
+          </div>
+          <Services />
         </section>
 
         {/* REVIEWS*/}
-        <section className="max-w-7xl mx-auto mb-28">
-          <div className="text-center my-20 max-w-4xl mx-auto text-lg">
-            <h3 className="text-4xl font-bold mb-4">
-              Her er, hvad mine fantastiske kunder har delt om deres oplevelser
+        <section className="mx-auto py-20 bg-gradient-to-l from-bgMain to-bgAccent">
+          <div className="text-center mb-20 max-w-4xl mx-auto px-10 text-lg">
+            <h3 className="text-2xl lg:text-4xl font-bold mb-4">
+              Her er, hvad mine <span className="text-moss">fantastiske kunder</span> har delt om deres oplevelser
               hos mig
             </h3>
             <p>
@@ -55,51 +69,39 @@ export default function Home() {
           <Reviews />
         </section>
 
-        {/* SERVICES */}
-        <section className=" py-20 bg-zinc-200">
-          <div className="text-center max-w-6xl mx-auto text-lg text-pretty mb-20 bg-zinc-200">
-            <h3 className="text-4xl font-bold mb-5">
-              Body SDS - Hvad kan det gøre for mig?
-            </h3>
-            <p>
-              Uanset om det handler om fysiske smerter, stress, angst eller
-              andre helbredsmæssige udfordringer, har Body SDS vist sig at være
-              effektiv.
-            </p>
-            <p className="mt-2">
-              Denne holistiske tilgang til kroppen hjælper med at løsne
-              spændinger, forbedre kropsholdningen, øge energiniveauet og fremme
-              en dybere følelse af ro og balance.{" "}
-            </p>
-          </div>
-          <Services />
-        </section>
-
         {/* SÅDAN FOREGÅR EN BEHANDLING */}
-        <section className="max-w-6xl mx-auto my-20 flex justify-between gap-20">
-          <div className="flex-1 bg-zinc-100 p-5 rounded-md shadow-md shadow-moss">
-            <h3 className="text-4xl font-bold mb-5">
-              Hvordan foregår en <span className="text-moss">behandling?</span>
-            </h3>
-            <div className="flex flex-col gap-5">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum ratione maiores? Ad nobis, molestiae ab mollitia, expedita ratione tempora veniam cupiditate inventore exercitationem, facere at recusandae dolor non natus porro perferendis.</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nihil autem itaque, facere eius inventore aspernatur tempora soluta cumque! Quo?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eum modi voluptas quo nihil quaerat sint consequatur est. Neque, dolores aperiam minima expedita consectetur voluptas aliquid odit ea quos fugit.</p>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas facilis, explicabo incidunt rerum placeat reprehenderit obcaecati modi iste voluptates deleniti. Ratione natus labore laudantium dicta, fuga, eveniet facilis debitis magnam molestias ex esse culpa laborum quae non eum. Asperiores, maxime.</p>
+        <section className="py-20 flex justify-between gap-20 bg-gradient-to-l from-bgAccent to-bgMain ">
+          <div className="max-w-6xl flex flex-col mx-auto justify-between gap-20 px-10">
+            <div className="flex-1">
+              <h3 className="text-4xl font-bold mb-5">
+                Hvordan foregår en behandling?
+              </h3>
+              <div className="flex flex-col gap-5">
+                <p>Behandlingen starter med en indledende samtale mellem behandleren og klienten. Formålet med samtalen er at forstå klientens behov, symptomer og eventuelle helbredsproblemer. Behandleren spørger også om klientens livsstil, stressniveau og tidligere behandlinger.</p>
+                <p>Behandleren udfører en fysisk vurdering af klientens krop. Dette kan omfatte observation af kropsholdning, bevægelighed og eventuelle muskelspændinger eller ømheder.</p>
+                <p>Selve behandlingen involverer dybdegående massage og tryk på specifikke punkter på kroppen. Behandleren bruger hænder, albuer og knæ for at løsne spændinger i muskler og led. Massagen kan være intens og dyb, men den tilpasses altid klientens komfortniveau..</p>
+                <p>En vigtig del af Body SDS behandlingen er fokus på åndedrættet. Klienten opfordres til at bruge dybe, langsomme åndedrag for at hjælpe med at frigøre spændinger og øge kroppens ilttilførsel. Åndedrættet bruges som et redskab til at støtte den fysiske behandling og fremme afslapning.</p>
+                <p>Under behandlingen kan der også være fokus på sammenhængen mellem krop og psyke. Behandleren kan tale med klienten om følelsesmæssige oplevelser, der kan være relateret til fysiske spændinger. Formålet er at skabe en helhedsorienteret forståelse af klientens velbefindende.</p>
+                <p>Efter behandlingen følger en kort samtale, hvor klienten får mulighed for at dele sine oplevelser og følelser. Behandleren kan give råd om øvelser, stræk og livsstilsændringer, der kan støtte klientens fortsatte velvære.</p>
+              </div>
+              <div className="flex items-end justify-between">
+                <p>Har du mod på at prøve?</p>
+                <Link href="https://sonne-bodybalance.planway.com/?fbclid=IwAR14JyAShdeG4tOl3EPBHtMp_onLHOROfLiVgrawWiVyBwH5xlHJw_SrvtE" className="px-8 py-4 bg-moss rounded-md text-white hover:bg-moss/50 uppercase border-2 border-moss mt-5">
+                  Book tid
+                </Link>
+              </div>
             </div>
-          </div>
-
-
-          <div className="flex items-center relative">
-            <Image
-              className="rounded-md z-20 w-full"
-              src="/behandlingdummy.jpg"
-              width={400}
-              height={400}
-              alt="Behandling hos SonneBB"
-            />
-            <div className="w-[640px] h-[520px] bg-moss/50 rounded-md absolute z-10 ml-16 mt-20">
-
+            <div className="flex mx-auto">
+              <div className="flex items-center relative px-5">
+                <Image
+                  className="rounded-md z-20 w-[400px]"
+                  src="/sonnearm.jpeg"
+                  width={400}
+                  height={400}
+                  alt="Behandling hos SonneBB"
+                />
+                {/* <div className="w-[400px] h-[533px] bg-moss rounded-md absolute z-10 ml-12 mt-20"></div> */}
+              </div>
             </div>
           </div>
         </section>

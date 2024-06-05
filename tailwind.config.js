@@ -16,8 +16,16 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        moss: "#89b3a9"
-      }
+        moss: "#89b3a9",
+        orangeAccent: "#C76000",
+        textMain: "#F3F7F6",
+        bgMain: "#385750",
+        bgAccent: "#58897D",
+      },
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        playfair: ['var(--font-playfair)'],
+      },
     },
   },
   darkMode: "class",

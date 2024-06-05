@@ -10,17 +10,17 @@ const reviews = [
 
 export default function Reviews() {
     return (
-        <article className="grid grid-cols-3 place-items-center gap-5">
+        <article className="grid lg:grid-cols-3 place-items-center gap-20 lg:gap-5 max-w-7xl mx-auto">
             {reviews.map((review, i) => (
-                <Card key={i} isblurred className="max-w-[275px] h-[300px] md:max-w-[400px] p-5 bg-moss text-white shadow-lg shadow-zinc-400 overflow-visible">
-                    <CardHeader className="font-bold text-xl">
+                <Card key={i} isblurred className="max-w-[325px] h-fit md:max-w-[400px] p-5 bg-moss overflow-visible">
+                    <CardHeader className="font-bold text-xl text-textMain">
                         {review.name}
                     </CardHeader>
-                    <CardBody >
-                        {review.content}
+                    <CardBody className="font-playfair">
+                        &quot;{review.content}&quot;
                     </CardBody>
-                    <CardFooter className="-mb-20 flex justify-end">
-                        <FaQuoteRight className="text-black text-8xl" />
+                    <CardFooter className="md:-mb-20 -mb-14 flex justify-end">
+                        <FaQuoteRight className="text-black text-6xl md:text-8xl" />
                     </CardFooter>
                 </Card>
             ))}
