@@ -12,7 +12,7 @@ export default function Navbar() {
     const isActiveBooking = pathname === "/booking";
 
     return (
-        <nav className="font-semibold items-end flex w-full bg-neutral-800 lg:bg-black py-5">
+        <nav className="font-semibold items-end flex w-full bg-neutral-800 py-5">
             <div className="max-w-7xl flex flex-col lg:flex-row lg:items-end items-center gap-10 lg:gap-0 lg:justify-between mx-auto w-full">
                 <Link href="/">
                     <Image

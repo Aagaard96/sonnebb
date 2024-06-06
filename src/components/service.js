@@ -19,7 +19,7 @@ export default function Services() {
             <div className="grid grid-cols-3 max-w-3xl mx-auto mb-10">
                 {topIcons.map((feeling, i) => (
                     <div key={i} className="flex flex-col items-center">
-                        <div className="lg:bg-moss p-4 lg:p-8 rounded-md">
+                        <div className="lg:bg-moss p-4 lg:p-6 rounded-md">
                             <Image
                                 className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] lg:invert"
                                 src={feeling.img}
@@ -36,7 +36,7 @@ export default function Services() {
             <div className="grid grid-cols-4 max-w-5xl mx-auto">
                 {bottomIcons.map((feeling, i) => (
                     <div key={i} className="flex flex-col items-center">
-                        <div className="lg:bg-moss p-4 lg:p-8 rounded-md">
+                        <div className="lg:bg-moss p-4 lg:p-6 rounded-md">
                             <Image
                                 className="w-[50px] h-[50px] lg:w-[100px] lg:h-[100px] lg:invert"
                                 src={feeling.img}

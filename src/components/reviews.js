@@ -1,5 +1,7 @@
+"use client"
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 import { FaQuoteRight } from "react-icons/fa";
+import StaggerAnimation from "./animations/staggerAnimation";
 
 const reviews = [
     { name: "Rasmus Nolten", content: "Jeg vil varmt anbefale deres service til enhver, der søger en dybt givende og helbredende oplevelse. Tak for en fantastisk behandling!", cause: "Stress" },
@@ -12,7 +14,8 @@ export default function Reviews() {
     return (
         <article className="grid lg:grid-cols-3 place-items-center gap-20 lg:gap-5 max-w-7xl mx-auto">
             {reviews.map((review, i) => (
-                <Card key={i} isblurred className="max-w-[325px] h-fit md:max-w-[400px] p-5 bg-moss overflow-visible">
+            <StaggerAnimation key={i} index={i} >
+                <Card isblurred className="max-w-[325px] h-fit md:max-w-[400px] p-5 bg-moss overflow-visible">
                     <CardHeader className="font-bold text-xl text-textMain">
                         {review.name}
                     </CardHeader>
@@ -20,9 +23,10 @@ export default function Reviews() {
                         &quot;{review.content}&quot;
                     </CardBody>
                     <CardFooter className="md:-mb-20 -mb-14 flex justify-end">
-                        <FaQuoteRight className="text-black text-6xl md:text-8xl" />
+                        <FaQuoteRight className="text-neutral-800 text-6xl md:text-8xl" />
                     </CardFooter>
                 </Card>
+            </StaggerAnimation>
             ))}
         </article>
     )

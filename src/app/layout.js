@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="da" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="bg-bgMain text-textMain mx-auto">
+      <body className="bg-neutral-800 text-textMain mx-auto">
         <Navbar />
         {children}
         <Footer />

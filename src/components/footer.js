@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-black">
+        <footer className="bg-neutral-800">
             <div className="mx-auto max-w-6xl p-8 py-6 lg:py-10">
                 <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1">
                     <div className="mb-6 md:mb-0 col-start-1 row-start-2 md:row-start-1 md:pr-5 lg:pr-0 place-self-center">
@@ -50,7 +50,7 @@ export default function Footer() {
                     <div className="col-start-2 row-start-2 md:col-start-4 md:row-start-1 place-self-center">
                         <Image
                             className=""
-                            src="/logo/ab_logo_black.png"
+                            src="/logo/ab_logo_nobg.png"
                             width={150}
                             height={150}
                             alt="Autoriseret Body SDS Behandler"
