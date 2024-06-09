@@ -1,39 +1,36 @@
 import { NextUIProvider } from "@nextui-org/react";
-import FixedBookBtn from "@/components/fixedbookbtn";
 import Reviews from "@/components/reviews";
-import Services from "@/components/service";
 import Image from "next/image";
 import BookBtn from "@/components/bookbtn";
 import Divider from "@/components/divider";
-import SlideIn from "@/components/animations/SlideAnimation";
+import Animation from "@/components/animations/SlideAnimation";
+import Symptomer from "@/components/symptomer";
+
 
 export default function Home() {
   return (
     <NextUIProvider>
       <main className="min-h-screen mx-auto">
-        {/* BOOK TID BUTTON */}
-        <FixedBookBtn />
-
         {/* HERO */}
         <section className=" bg-[url('/heromobile.jpg')] lg:bg-[url('/sonnenakke.JPEG')] bg-cover bg-no-repeat  flex flex-col items-center justify-center h-screen">
           <div className="flex flex-col text-center font-medium max-w-6xl font-playfair">
-            <h1 className="text-5xl md:text-4xl lg:text-[150px]">Body Session</h1>
-            <h3 className="text-4xl md:text-2xl lg:text-[80px] lg:mt-28">
-              50 min./950.kr
-            </h3>
-            <div className="text-sm md:text-xl mx-5 max-w-2xl md:mx-auto p-5 rounded-md font-inter md:mt-10">
+            <Animation as="h3" type="OnlyScale" duration={0.75} delay={0.5} className="text-6xl md:text-4xl lg:text-[150px]">Body Session</Animation>
+            <Animation as="h3" type="OnlyScale" duration={0.75} delay={0.75} className="text-4xl md:text-2xl lg:text-[80px] mt-3 lg:mt-28">
+              50 min./950 kr
+            </Animation>
+            <Animation as="div" type="OnlyAppear" duration={1} delay={1.5} className="text-sm md:text-xl mx-5 max-w-2xl md:mx-auto p-5 rounded-md font-inter md:mt-10">
               <p>Body SDS er et af verdens mest effektive behandlings- og træningssystemer.</p>
               <p>Effektivt mod migræne, sportsskader, stress, angst, traumer, smerte, piskesmæld, kold skulder, tennisalbue, kontorskader, ryg- og nakkeproblemer, eksem, allergi, astma og fordøjelsesproblemer.</p>
-            </div>
+            </Animation>
           </div>
           <BookBtn />
         </section>
 
-        {/* SERVICES */}
-        <section className="py-28 px-10 bg-gradient-to-l from-bgAccent to-bgMain">
-          <div className="text-center max-w-6xl mx-auto  text-lg text-balance mb-10 lg:mb-20">
-            <h3 className="text-2xl lg:text-4xl font-bold mb-4">
-              <span className="text-moss">Body SDS</span> - Hvad kan det gøre for mig?
+        {/* SYMPTOMER */}
+        <section className="py-28 px-10 bg-gradient-to-l from-accentBg to-mainBg">
+          <div className="text-center max-w-6xl mx-auto text-balance mb-10 lg:mb-20 md:text-lg">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+              <span className="text-accentText">Body SDS</span> - Hvad kan det gøre for mig?
             </h3>
             <p>
               Uanset om det handler om fysiske smerter, stress, angst eller
@@ -46,17 +43,16 @@ export default function Home() {
               en dybere følelse af ro og balance.
             </p>
           </div>
-          <Services />
+          <Symptomer />
         </section>
 
         <Divider />
 
         {/* REVIEWS*/}
-        <section className="mx-auto py-28 bg-gradient-to-l from-bgMain to-bgAccent">
-          <SlideIn as="div" direction="bottom" className="text-center mb-20 max-w-5xl mx-auto px-10 text-lg">
-            <h3 className="text-2xl lg:text-4xl font-bold mb-4">
-              Her er, hvad mine <span className="text-moss">fantastiske kunder</span> har delt om deres oplevelser
-              hos mig
+        <section className="mx-auto py-28 bg-gradient-to-l from-mainBg to-accentBg">
+          <Animation as="div" type="SlideInBottom" className="text-center mb-20 max-w-5xl mx-auto px-10">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10">
+              Mine <span className="text-accentText">fantastiske kunder</span> har sagt følgende:
             </h3>
             <p>
               I løbet af de sidste 5 år har jeg haft æren af at bidrage til at
@@ -67,17 +63,17 @@ export default function Home() {
               har de fleste oplevet en mærkbar forbedring i deres livskvalitet
               efter vores behandlinger.
             </p>
-          </SlideIn>
+          </Animation>
           <Reviews />
         </section>
 
         <Divider />
 
         {/* SÅDAN FOREGÅR EN BEHANDLING */}
-        <section className="py-28 bg-gradient-to-l from-bgAccent to-bgMain px-10">
+        <section className="py-28 bg-gradient-to-l from-accentBg to-mainBg px-10">
           <div className="max-w-6xl flex flex-col lg:flex-row mx-auto justify-between gap-20 ">
-            <div className="flex-1 text-center">
-              <h3 className="text-2xl lg:text-4xl font-bold mb-4">
+            <div className="flex-1 text-center lg:text-start">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10">
                 Hvordan foregår en behandling?
               </h3>
               <div className="flex flex-col gap-5">

@@ -12,7 +12,7 @@ export default function Navbar() {
     const isActiveBooking = pathname === "/booking";
 
     return (
-        <nav className="font-semibold items-end flex w-full bg-neutral-800 py-5">
+        <nav className="font-semibold items-end flex w-full bg-neutral-800 py-5 lg:px-5">
             <div className="max-w-7xl flex flex-col lg:flex-row lg:items-end items-center gap-10 lg:gap-0 lg:justify-between mx-auto w-full">
                 <Link href="/">
                     <Image
@@ -24,7 +24,7 @@ export default function Navbar() {
                     />
                 </Link>
                 <ul className="justify-around text-sm uppercase flex h-[45px]">
-                    <div className="bg-main flex text-center rounded-lg divide-x-2 divide-moss border-moss border-2">
+                    <div className="bg-main flex text-center rounded-lg divide-x-2 divide-accentText border-accentText border-2">
                         <NavItem href="/om-body-sds" isActive={isActiveOmBodySDS}>om body sds</NavItem>
                         <NavItem href="/om-mig" isActive={isActiveOmMig}>om mig</NavItem>
                         <NavItem href="/videoer" isActive={isActiveVideoer}>videoer</NavItem>
@@ -38,7 +38,7 @@ export default function Navbar() {
 }
 
 const NavItem = ({ href, isActive, external, children }) => {
-    const classNames = `flex items-center justify-center text-[10px] lg:text-sm lg:w-[150px] w-[90px] hover:text-zinc-100 hover:bg-moss/50 transition duration-300 ease-in-out ${isActive ? "bg-moss/50 text-zinc-100" : ""}`;
+    const classNames = `flex items-center justify-center text-[10px] lg:text-sm lg:w-[150px] w-[90px] hover:text-zinc-100 hover:bg-moss/50 transition duration-300 ease-in-out ${isActive ? "bg-accentText/50 text-zinc-100" : ""}`;
 
     return (
         <li className={classNames}>

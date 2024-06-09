@@ -24,7 +24,7 @@ export default function FixedBookBtn() {
             {isVisible && (
                 <motion.a
                     href="https://sonne-bodybalance.planway.com/?fbclid=IwAR14JyAShdeG4tOl3EPBHtMp_onLHOROfLiVgrawWiVyBwH5xlHJw_SrvtE"
-                    className="font-bold text-[8px] text-center lg:text-lg flex justify-center items-center w-[75px] h-[75px] lg:w-[125px] lg:h-[125px] text-wrap bg-neutral-800 rounded-full text-white hover:bg-moss uppercase border-4 border-moss hover:border-zinc-200 fixed right-5 top-10 z-50"
+                    className="font-bold text-[8px] text-center lg:text-lg flex justify-center items-center w-[75px] h-[75px] lg:w-[125px] lg:h-[125px] text-wrap bg-neutral-800 rounded-full text-white hover:bg-accentText uppercase border-4 border-accentText hover:border-zinc-200 fixed right-5 top-10 z-50"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

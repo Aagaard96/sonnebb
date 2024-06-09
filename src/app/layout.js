@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Inter, Playfair_Display } from 'next/font/google'
+import FixedBookBtn from "@/components/fixedbookbtn";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,7 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="da" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="bg-neutral-800 text-textMain mx-auto">
+      <body className="bg-neutral-800 text-mainText mx-auto">
+        {/* BOOK TID BUTTON */}
+        <FixedBookBtn />
         <Navbar />
         {children}
         <Footer />

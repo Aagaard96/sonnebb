@@ -32,17 +32,17 @@ export default function Footer() {
                         <h2 className="text-sm font-semibold uppercase ">Kontakt:</h2>
                         <ul>
                             <li>
-                                <Link className="text-moss" href="mailto:morten@sonnebb.dk">Morten@sonnebb.dk</Link>
+                                <Link className="text-accentText" href="mailto:morten@sonnebb.dk">Morten@sonnebb.dk</Link>
                             </li>
                             <li>
-                                <Link className="text-moss" href="tel:+4525378860">+45 2537 8860</Link>
+                                <Link className="text-accentText" href="tel:+4525378860">+45 2537 8860</Link>
                             </li>
                             <li className="flex items-baseline">
                                 <Link
                                     isExternal
                                     href="https://www.instagram.com/sonnebodyandbalance/"
                                 >
-                                    <FaInstagram className="text-moss" size={25} />
+                                    <FaInstagram className="text-accentText" size={25} />
                                 </Link>
                             </li>
                         </ul>

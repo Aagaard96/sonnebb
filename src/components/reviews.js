@@ -15,8 +15,8 @@ export default function Reviews() {
         <article className="grid lg:grid-cols-3 place-items-center gap-20 lg:gap-5 max-w-7xl mx-auto">
             {reviews.map((review, i) => (
             <StaggerAnimation key={i} index={i} >
-                <Card isblurred className="max-w-[325px] h-fit md:max-w-[400px] p-5 bg-moss overflow-visible">
-                    <CardHeader className="font-bold text-xl text-textMain">
+                <Card isblurred className="max-w-[325px] h-fit md:max-w-[400px] p-5 bg-accentText overflow-visible">
+                    <CardHeader className="font-bold text-xl text-mainText">
                         {review.name}
                     </CardHeader>
                     <CardBody className="font-playfair">
