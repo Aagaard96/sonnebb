@@ -4,7 +4,7 @@ const StaggerAnimationVariants = {
     initial: {
         opacity: 0,
         y: 50, // Slightly less downward movement
-        scale: 0.95, // Slightly scale down
+        scale: 0.75, // Slightly scale down
     },
     animate: (index = 0) => ({
         opacity: 1,
@@ -13,7 +13,7 @@ const StaggerAnimationVariants = {
         transition: {
             duration: 0.5, // Shortened duration for a quicker appearance
             ease: "easeOut", // Easing for a smoother transition
-            delay: 0.5 * index, // Delay to create a staggered effect
+            delay: 0.3 * index, // Delay to create a staggered effect
         },
     }),
 };

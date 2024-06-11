@@ -16,7 +16,7 @@ export default function Animation({ children, className, type = 'bottom', durati
         
         //EFFECTS
         OnlyScale: { initial: { opacity: 0, y: 0, scale: 0.5 }, animate: { opacity: 1, y: 0, scale: 1 } },
-        OnlyAppear: { initial: { opacity: 0, y: 0 }, animate: { opacity: 1, y: 1 } }
+        OnlyAppear: { initial: { opacity: 0, y: 0 }, animate: { opacity: 1, y: 0 } }
     };
 
     const MotionComponent = motion[as];

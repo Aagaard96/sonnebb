@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function OmMorten() {
     return (
         <section className="py-20 bg-gradient-to-br from-mainBg to-accentBg">
-            <div className="flex flex-col lg:flex-row lg:gap-20 px-10 lg:px-0 max-w-5xl mx-auto">
+            <div className="flex flex-col lg:flex-row lg:gap-20 px-10 lg:px-0 max-w-6xl mx-auto">
                 <div className="flex-1 flex flex-col text-lg">
                     <Animation as="div" type="OnlyAppear" duration={1.5} delay={0.15} className="mb-10">
                         <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">Morten Sonne</h3>
@@ -39,7 +39,7 @@ export default function OmMorten() {
                     <Image src="/profiledummy.jpg" width={400} height={200} alt="Morten Sonne" className="mx-auto rounded-md shadow-accentText/50 shadow-lg" />
                 </div>
             </div>
-            <div className="flex flex-col lg:flex-row lg:gap-20 max-w-5xl mx-auto px-10 lg:px-0 mt-10">
+            <div className="flex flex-col lg:flex-row lg:gap-20 max-w-6xl mx-auto px-10 lg:px-0 mt-10">
                 <div className="flex items-center mb-10 lg:mb-0">
                     <Image src="/aboutprofile.jpg" width={400} height={200} alt="Morten Sonne" className="mx-auto rounded-md shadow-accentText/50 shadow-lg" />
                 </div>

@@ -14,19 +14,19 @@ export default function Reviews() {
     return (
         <article className="grid lg:grid-cols-3 place-items-center gap-20 lg:gap-5 max-w-7xl mx-auto">
             {reviews.map((review, i) => (
-            <StaggerAnimation key={i} index={i} >
-                <Card isblurred className="max-w-[325px] h-fit md:max-w-[400px] p-5 bg-accentText overflow-visible">
-                    <CardHeader className="font-bold text-xl text-mainText">
-                        {review.name}
-                    </CardHeader>
-                    <CardBody className="font-playfair">
-                        &quot;{review.content}&quot;
-                    </CardBody>
-                    <CardFooter className="md:-mb-20 -mb-14 flex justify-end">
-                        <FaQuoteRight className="text-neutral-800 text-6xl md:text-8xl" />
-                    </CardFooter>
-                </Card>
-            </StaggerAnimation>
+                <StaggerAnimation key={i} index={i} >
+                    <Card isblurred className="max-w-[325px] h-fit md:max-w-[400px] p-5 bg-accentText overflow-visible text-mainText border-1 border-mainText shadow-sm shadow-mainText">
+                        <CardHeader className="font-bold text-xl">
+                            {review.name}
+                        </CardHeader>
+                        <CardBody>
+                            &quot;{review.content}&quot;
+                        </CardBody>
+                        <CardFooter className="md:-mb-20 -mb-14 flex justify-end">
+                            <FaQuoteRight className="text-neutral-800 text-6xl md:text-8xl" />
+                        </CardFooter>
+                    </Card>
+                </StaggerAnimation>
             ))}
         </article>
     )

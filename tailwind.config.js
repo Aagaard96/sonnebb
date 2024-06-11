@@ -26,6 +26,7 @@ module.exports = {
       fontFamily: {
         inter: ['var(--font-inter)'],
         playfair: ['var(--font-playfair)'],
+        inria: ['var(--font-inria)'],
       },
     },
   },

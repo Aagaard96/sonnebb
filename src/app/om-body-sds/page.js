@@ -13,10 +13,17 @@ const icons = [
 
 export default function OmBodysds() {
   return (
-    <article className="flex gap-20 py-20 px-10 bg-gradient-to-br from-mainBg to-accentBg">
-      <div className="flex flex-col text-lg max-w-5xl mx-auto">
-        <div className="mb-10">
+    <article className="flex gap-20 py-20 px-10 bg-gradient-to-br from-mainBg to-accentBg relative">
+      <div className="flex flex-col text-lg max-w-6xl mx-auto">
+        <div className="flex items-end justify-between mb-10">
           <h3 className="text-4xl font-bold leading-none">Hvad er <span className="text-accentText">Body SDS?</span></h3>
+          <Image
+            className="mr-10 hidden md:block"
+            src="/logo/ab_logo_nobg_cropped.png"
+            width={200}
+            height={200}
+            alt="Body SDS"
+          />
         </div>
         <div className="flex flex-col gap-5">
           <p>

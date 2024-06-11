@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         <nav className="font-semibold items-end flex w-full bg-neutral-800 py-5 lg:px-5">
-            <div className="max-w-7xl flex flex-col lg:flex-row lg:items-end items-center gap-10 lg:gap-0 lg:justify-between mx-auto w-full">
+            <div className="max-w-6xl flex flex-col lg:flex-row lg:items-end items-center gap-10 lg:gap-0 lg:justify-between mx-auto w-full">
                 <Link href="/">
                     <Image
                         src="/logo/sonnebb_logo_hvid.svg"
