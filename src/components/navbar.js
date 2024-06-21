@@ -19,7 +19,7 @@ export default function Navbar() {
                         src="/logo/sonnebb_logo_hvid.svg"
                         width={200}
                         height={200}
-                        alt="test"
+                        alt="Sonne Body & Balance"
                         className="justify-self-center place-self-center w-[150px] lg:w-[150px]"
                     />
                 </Link>

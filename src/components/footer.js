@@ -11,7 +11,7 @@ export default function Footer() {
                             <Image src="/logo/sonnebb_logo_hvid.svg"
                                 height={200}
                                 width={200}
-                                className="rounded-none" alt="Willum Logo" />
+                                className="rounded-none" alt="Sonne Body & Balance" />
                         </a>
                     </div>
                     <div className="col-start-1 md:col-start-2 place-self-center">

@@ -1,6 +1,11 @@
 import Divider from '@/components/divider'
 import React from 'react'
 
+export const metadata = {
+    title: "Videoer | Sonne Body & Balance",
+    description: "Her finder du forskellige små øvelser du kan lave derhjemme, uden krav til udstyr",
+  };
+
 export default function Videoer() {
     return (
         <section className="py-20 bg-gradient-to-br from-mainBg to-accentBg">
@@ -21,6 +26,7 @@ export default function Videoer() {
                         className='rounded-lg'
                         src="/bahamas.mp4"
                         controls
+                        preload='metadata'
                     />
                 </article>
                 <Divider className="my-10" />

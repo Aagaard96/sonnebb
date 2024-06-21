@@ -1,6 +1,11 @@
 import Animation from "@/components/animations/SlideAnimation";
 import Image from "next/image";
 
+export const metadata = {
+    title: "Om Mig | Sonne Body & Balance",
+    description: "Min historie, og vejen til at blive Body SDS behandler.",
+};
+
 export default function OmMorten() {
     return (
         <section className="py-20 bg-gradient-to-br from-mainBg to-accentBg">
@@ -36,12 +41,12 @@ export default function OmMorten() {
                     </div>
                 </div>
                 <div className="hidden lg:block">
-                    <Image src="/profiledummy.jpg" width={400} height={200} alt="Morten Sonne" className="mx-auto rounded-md shadow-accentText/50 shadow-lg" />
+                    <Image src="/profiledummy.jpg" width={400} height={200} alt="Morten Sonne - Body SDS Behandler" className="mx-auto rounded-md shadow-accentText/50 shadow-lg" />
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row lg:gap-20 max-w-6xl mx-auto px-10 lg:px-0 mt-10">
                 <div className="flex items-center mb-10 lg:mb-0">
-                    <Image src="/aboutprofile.jpg" width={400} height={200} alt="Morten Sonne" className="mx-auto rounded-md shadow-accentText/50 shadow-lg" />
+                    <Image src="/aboutprofile.jpg" width={400} height={200} alt="Morten Sonne - Body SDS Behandler" className="mx-auto rounded-md shadow-accentText/50 shadow-lg" />
                 </div>
                 <div className="flex-1 flex flex-col gap-5 text-lg">
                     <Animation as="p" type="OnlyAppear" duration={1.25} delay={0.25}>

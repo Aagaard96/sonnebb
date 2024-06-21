@@ -116,7 +116,7 @@ export default function Home() {
                   src="/sonnearm.jpeg"
                   width={400}
                   height={400}
-                  alt="Behandling hos SonneBB"
+                  alt="Behandling af skulder"
                 />
               </div>
             </div>

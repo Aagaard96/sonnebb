@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-
 const icons = [
   { img: "/negative-thoughts-icon.svg", heading: "Stress" },
   { img: "/stress-icon.svg", heading: "Angst" },
@@ -10,6 +9,11 @@ const icons = [
   { img: "/negative-thoughts-icon.svg", heading: "Sportsskader" },
   { img: "/stress-icon.svg", heading: "Velvære" }
 ];
+
+export const metadata = {
+  title: "Om Body SDS | Sonne Body & Balance",
+  description: "Hvad er Body SDS - og hvordan bruger vi det?",
+};
 
 export default function OmBodysds() {
   return (
@@ -22,7 +26,7 @@ export default function OmBodysds() {
             src="/logo/ab_logo_nobg_cropped.png"
             width={200}
             height={200}
-            alt="Body SDS"
+            alt="Autoriseret Body SDS Behandler"
           />
         </div>
         <div className="flex flex-col gap-5">
