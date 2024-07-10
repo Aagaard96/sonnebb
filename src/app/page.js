@@ -13,6 +13,7 @@ export default function Home() {
         {/* HERO */}
         <section className=" bg-[url('/heromobile.jpg')] lg:bg-[url('/sonnenakke.JPEG')] bg-cover bg-no-repeat flex flex-col items-center justify-center h-screen">
           <div className="flex flex-col px-2 md:px-0 text-center font-medium max-w-6xl font-playfair">
+            <h1 className="text-4xl font-inria mb-5 text-accentText">Sonne Body &amp; Balance</h1>
             <Animation
               as="h3"
               type="OnlyScale"

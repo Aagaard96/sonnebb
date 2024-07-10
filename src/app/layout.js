@@ -26,7 +26,7 @@ const playfair = Playfair_Display({
 
 export const metadata = {
   title: "Sonne Body & Balance | Body SDS",
-  description: "Body SDS Kropsterapeut i Karlslunde",
+  description: "Autoriseret Body SDS behandler i Karlslunde. Går du og døjer med stress eller angst? Eller går tingene bare lidt for stærkt oppe i hovedet? Har du en sportsskade der holder dig tilbage fra sport? Kontakt mig, så tar' vi en uforpligtende snak",
 };
 
 export default function RootLayout({ children }) {

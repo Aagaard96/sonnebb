@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://sonnebb.com/sitemap.xml",
+    sitemap: "https://sonnebb.dk/sitemap.xml",
   };
 }
