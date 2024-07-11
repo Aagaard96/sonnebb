@@ -1,10 +1,10 @@
 import { NextUIProvider } from "@nextui-org/react";
-import Reviews from "@/components/reviews";
+import Reviews from "./components/reviews";
 import Image from "next/image";
-import BookBtn from "@/components/cta-btn";
-import Divider from "@/components/divider";
-import Animation from "@/components/animations/SlideAnimation";
-import Symptomer from "@/components/symptomer";
+import BookBtn from "./components/cta-btn";
+import Divider from "./components/divider";
+import Animation from "./components/animations/SlideAnimation";
+import Symptomer from "./components/symptomer";
 
 export default function Home() {
   return (

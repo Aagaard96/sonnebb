@@ -1,4 +1,4 @@
-import Divider from "@/components/divider";
+import { Divider } from "@nextui-org/react";
 import React from "react";
 
 export const metadata = {

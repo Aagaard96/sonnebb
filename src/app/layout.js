@@ -1,10 +1,11 @@
 import "./globals.css";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+
+import Footer from "./components/footer";
 import { Inter, Playfair_Display, Inria_Sans } from "next/font/google";
-import FixedBookBtn from "@/components/globalBookNowBtn";
-import ToTopBtn from "@/components/globalToTopbtn";
-import NavbarMobile from "@/components/navbarMobile";
+import FixedBookBtn from "./components/globalBookNowBtn";
+import ToTopBtn from "./components/globalToTopbtn";
+import NavbarMobile from "./components/navbarMobile";
+import Navbar from "./components/navbar";
 
 const inter = Inter({
   subsets: ["latin"],

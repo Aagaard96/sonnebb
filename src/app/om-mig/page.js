@@ -1,5 +1,6 @@
-import Animation from "@/components/animations/SlideAnimation";
+
 import Image from "next/image";
+import Animation from "../components/animations/SlideAnimation";
 
 export const metadata = {
     title: "Om Mig | Sonne Body & Balance",
@@ -11,7 +12,7 @@ export default function OmMorten() {
         <section className="py-28 bg-gradient-to-br from-mainBg to-accentBg">
             <div className="flex flex-col lg:flex-row lg:gap-20 px-10 xl:px-0 max-w-6xl mx-auto">
                 <div className="flex-1 flex flex-col text-lg">
-                    <Animation
+              <Animation
                         as="div"
                         type="OnlyAppear"
                         duration={1.5}
