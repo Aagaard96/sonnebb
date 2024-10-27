@@ -19,7 +19,7 @@ export default function OmMorten() {
                     <div className='flex-1 space-y-2'>
                         <h3 className='p-heading'>Morten Sonne <br /><span className='text-accent text-lg'>Autoriseret BODY SDS Behandler</span></h3>
                         <div className='textCtn'>
-                            <p>Jeg kommer oprindelig fra cykelsporten, hvor jeg i slutningen af 90'erne og starten af 00'erne kørte som professionel i 5 år. Jeg kørte flere år i Italien og deltog bl.a. 4 gange i VM.</p>
+                            <p>Jeg kommer oprindelig fra cykelsporten, hvor jeg i slutningen af 90&apos;erne og starten af 00&apos;erne kørte som professionel i 5 år. Jeg kørte flere år i Italien og deltog bl.a. 4 gange i VM.</p>
                             <p>I 2012 begyndte jeg at træne mere seriøst med triatlon, som jeg i flere år havde snuset til på motionsplan. På 5 år, deltog jeg 3 gange i VM på Hawaii, med en 4. plads som bedste resultat.</p>
                             <p>Det hele fik dog en brat afslutning, da jeg i 2017 fik en blodprop i hjertet imens jeg en tirsdag eftermiddag cyklede hjem fra arbejde. Den oplevelse satte en masse tanker i gang, for hvordan kunne en sportsmand i topform og med deltagelse i konkurrencer på topniveau få en blodprop ud af det blå? Jeg spiste sundt, røg ikke og drak kun sjælendt alkohol.</p>
                             <p>Faktisk mente jeg selv, at jeg skulle passere 100 år - ovenikøbet med en god margin.</p>
