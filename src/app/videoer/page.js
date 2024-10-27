@@ -1,5 +1,4 @@
-import { Divider } from "@nextui-org/react";
-import React from "react";
+
 
 export const metadata = {
   title: "Videoer | Sonne Body & Balance",
@@ -9,9 +8,9 @@ export const metadata = {
 
 export default function Videoer() {
   return (
-    <section className="py-28 bg-gradient-to-br from-mainBg to-accentBg">
-      <div className="flex flex-col px-10 xl:px-0 max-w-6xl mx-auto justify-center">
-        <div className="mb-20 text-center">
+    <section className="h-screen flex items-center py-36">
+      <div className="ctn flex flex-col px-10 xl:px-0 mx-auto justify-center">
+        {/* <div className="mb-20 text-center">
           <h3 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-2">
             Hjemmeøvelser
           </h3>
@@ -19,8 +18,16 @@ export default function Videoer() {
             Her er nogle gode og effektive øvelser, du nemt kan lave derhjemme -
             helt uden udstyr, kun med din egen krop.
           </p>
+        </div> */}
+
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-center text-6xl">Kommer snart!</p>
+          <p className="text-3xl text-center mt-5 max-w-3xl">
+            Her vil du snart kunne finde nogle gode og effektive øvelser, du nemt kan lave derhjemme -
+            helt uden udstyr, kun med din egen krop.
+          </p>
         </div>
-        <article className="flex flex-col lg:flex-row gap-5 lg:gap-10">
+        {/* <article className="flex flex-col lg:flex-row gap-5 lg:gap-10">
           <div>
             <h4 className="text-xl font-semibold mb-2">
               Dette er en test overskrift
@@ -75,7 +82,7 @@ export default function Videoer() {
             </p>
           </div>
           <video className="rounded-md border-2 border-moss" src="/bahamas.mp4" controls />
-        </article>
+        </article> */}
       </div>
     </section>
   );

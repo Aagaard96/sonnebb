@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ctn {
+    @apply max-w-6xl xl:max-w-7xl mx-auto px-5 xl:px-0
+  }
+  
+  .cta-btn {
+    @apply px-4 py-2 bg-accentBg rounded-lg font-medium justify-center items-center tracking-tight w-fit inline-block text-center hover:bg-accentBg/50 border transition-colors duration-300 font-inria uppercase
+  }
+  
+  .section-main-heading {
+    @apply text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold uppercase
+  }
+  
+  .section-heading {
+    @apply text-lg sm:text-xl md:text-2xl  uppercase tracking-tight font-bold text-gray
+  }
+  
+  .p-heading {
+    @apply text-2xl tracking-tight font-medium uppercase
+  }
+  
+  .textCtn {
+     @apply space-y-2 leading-relaxed lg:text-lg text-pretty
+  }
+
+  .img {
+    @apply rounded-lg border-gray border-2 object-cover
+  }
