@@ -7,25 +7,22 @@ import Animation from "@/components/animations/SlideAnimation";
 // Sample testimonial data
 const testimonials = [
     {
-        name: "Rasmus Nolten",
-        title: "Iron-Man atlet",
+        name: "Morten Larsen",
+        title: "Triatlet & Ledelseskonsulent",
         content:
-            "Jeg vil varmt anbefale deres service til enhver, der søger en dybt givende og helbredende oplevelse. Tak for en fantastisk behandling!",
-        cause: "Stress",
+            "Jeg havde store problemer med kramper og muskelsmerter under triathlon. De dårlige resultater havde sat sig mentalt, og det var blevet en stor udfordring at sætte sig op til et løb af frygt for endnu en fiasko. Gennem samtale, behandling og øvelser blev spændingerne løsnet, og jeg opnåede endelig gode resultater uden kramper og med mentalt overskud hele vejen til mål. Jeg kan klart anbefale et forløb hos Morten.",
     },
     {
-        name: "Kirsten Rozenkrantz",
-        title: "Prof. Fodboldspiller - HB Køge",
+        name: "Tobias Risager",
+        title: "Studerende",
         content:
-            "Behandlingen var professionel og omsorgsfuld, og jeg følte mig virkelig hørt og forstået. Jeg kan varmt anbefale deres service til alle, der kæmper med angst og søger en effektiv og helbredende behandling. Mange tak for den vidunderlige oplevelse!",
-        cause: "Angst",
+            "Med hjælp fra Morten og hans dygtige arbejde gik jeg op til eksamen og gik derfra med et 12-tal. Morten har fået mig til at tro på mig selv og mine evner. Jeg har lært, at vejrtrækning kan hjælpe en hel del og give mig kontrol over min angst og mit tankemylder. Jeg værdsætter den hjælp, Morten har givet mig, og vil opfordre alle til at få den behandling, han kan tilbyde.",
     },
     {
         name: "Susanne Christensen",
-        title: "Landsholdssvømmer",
+        title: "Ironman-udøver",
         content:
-            "Jeg besøgte Sonne Body & Balance på grund af en sportsskade, der havde plaget mig i lang tid. Efter bare én session mærkede jeg en betydelig lettelse af mine smerter, og min mobilitet blev forbedret markant.",
-        cause: "Sportsskade",
+            "Jeg havde aldrig troet, at jeg skulle kunne gennemføre en Ironman igen. Min læg var fuldstændig overspændt, og jeg kunne intet stille op. Efter et forløb hos Morten fik vi løsnet op for det hele, både psykisk og fysisk, og kort efter kunne jeg både sætte personlig rekord på cyklen og i løbet. Jeg er så glad!",
     },
 ];
 
@@ -48,19 +45,19 @@ export default function Testimonials() {
     };
 
     return (
-        <article className="py-16 bg-[url('/sonnenakke.JPEG')] lg:bg-[url('/reviewsbg.jpg')] bg-no-repeat bg-cover border-y-4 border-white">
+        <article className="py-16 bg-[url('/nakke.jpg')] lg:bg-[url('/reviewsbg.jpg')] bg-no-repeat bg-center bg-cover border-y-4 border-mainText">
             <div className="h-full ctn">
-                <div className="text-center uppercase tracking-tight">
-                    <Animation type="OnlyAppear" as="h2" className="section-heading text-lg md:text-xl lg:text-2xl">
+                <div className="heading-container">
+                    <Animation type="OnlyAppear" as="h2" className="text-2xl md:text-3xl uppercase text-center tracking-tight font-bold text-accent lg:text-gray">
                         anmeldelser
                     </Animation>
-                    <h3 className="section-main-heading text-2xl md:text-3xl lg:text-4xl">
+                    <h3 className="section-description text-2xl md:text-3xl lg:text-4xl text-center">
                         Mine kunder har sagt:
                     </h3>
                 </div>
                 <div className="w-full md:w-4/5 lg:w-4/5 mx-auto mt-10">
                     {/* Container with fixed height */}
-                    <div className="relative flex items-center justify-center h-[250px] md:h-[250px] overflow-hidden">
+                    <div className="relative flex items-center justify-center h-[325px] overflow-hidden">
                         <AnimatePresence initial={false} mode="wait">
                             <motion.div
                                 key={currentIndex} // Make sure the key changes based on index
@@ -72,7 +69,7 @@ export default function Testimonials() {
                                     x: { type: "spring", stiffness: 30 },
                                     opacity: { duration: 0.5 },
                                 }}
-                                className="absolute w-4/5 bg-gray/95 rounded-lg flex items-center h-full border-2 border-accent"
+                                className="absolute w-4/5 bg-gray/95 rounded-lg flex items-center h-fit border-2 border-accent"
                             >
                                 <div className="text-center  flex flex-col gap-5 py-5 px-2 lg:p-10 relative">
                                     <div>
@@ -83,7 +80,7 @@ export default function Testimonials() {
                                             {testimonials[currentIndex].title}
                                         </p>
                                     </div>
-                                    <p className="text-sm md:text-lg lg:text-xl italic text-mainText font-extralight">
+                                    <p className="text-sm md:text-lg italic text-mainText font-extralight">
                                         &quot;{testimonials[currentIndex].content}&quot;
                                     </p>
                                 </div>

@@ -10,14 +10,17 @@ export const metadata = {
 export default function OmMorten() {
     return (
         <section className='py-36 ctn'>
-            <header className='mb-10 lg:mb-0'>
-            <Animation type="OnlyAppear" as="h2" className="section-heading">Sonne Body And Balance</Animation>
-                <h3 className="section-main-heading">Hvem er jeg?</h3>
+            <header className='mb-10 lg:mb-0 text-center sm:text-start'>
+                <Animation type="OnlyAppear" as="h2" className="section-heading">Hvem er</Animation>
+                <h3 className="section-description">Sonne Body &amp; Balance</h3>
             </header>
             <div className='flex flex-col gap-10'>
                 <article className='flex flex-col lg:flex-row gap-10 items-center'>
-                    <div className='flex-1 space-y-2'>
-                        <h3 className='p-heading'>Morten Sonne <br /><span className='text-accent text-lg'>Autoriseret BODY SDS Behandler</span></h3>
+                    <div className='flex-1'>
+                        <div className="uppercase mb-2">
+                            <h3 className='p-heading'>Morten Sonne</h3>
+                            <h3 className='text-lg'>Autoriseret BODY SDS Behandler</h3>
+                        </div>
                         <div className='textCtn'>
                             <p>Jeg kommer oprindelig fra cykelsporten, hvor jeg i slutningen af 90&apos;erne og starten af 00&apos;erne kørte som professionel i 5 år. Jeg kørte flere år i Italien og deltog bl.a. 4 gange i VM.</p>
                             <p>I 2012 begyndte jeg at træne mere seriøst med triatlon, som jeg i flere år havde snuset til på motionsplan. På 5 år, deltog jeg 3 gange i VM på Hawaii, med en 4. plads som bedste resultat.</p>
@@ -29,7 +32,7 @@ export default function OmMorten() {
                     <div className="lg:flex-1 relative h-[400px] w-full sm:w-4/5 md:h-[600px] lg:w-[400px]">
                         <Image
                             loading="lazy"
-                            src="/aboutprofile1.jpg"
+                            src="/om-mig-1.jpg"
                             fill
                             alt='Billede af Morten Sonne'
                             className="img"
@@ -41,7 +44,7 @@ export default function OmMorten() {
                     <div className="lg:flex-1 relative h-[400px] w-full sm:w-4/5 md:h-[600px] lg:w-[400px] order-2 lg:order-1">
                         <Image
                             loading="lazy"
-                            src="/aboutprofile.jpg"
+                            src="/om-mig-2.jpg"
                             fill
                             alt='Billede af Morten Sonne'
                             className="img"

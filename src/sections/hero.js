@@ -4,13 +4,11 @@ import Link from 'next/link'
 export default function Hero() {
     return (
         <header
-            className="h-screen relative bg-cover bg-center flex items-center px-5"
-            style={{
-                backgroundImage: "url('/sonnenakke.JPEG')",
-            }}
+            className="h-screen bg-[url('/heromobile.jpg')]  md:bg-[url('/herobg.JPEG')] relative bg-cover bg-center flex items-center"
+
         >
-            <div className=" ctn flex flex-col justify-center items-center px-2 md:px-0 text-center font-medium font-playfair">
-                <h1 className="text-4xl font-inria mb-5 text-accent">
+            <div className=" ctn flex flex-col justify-center items-center text-center font-medium font-playfair">
+                <h1 className="text-3xl font-inria mb-5 text-accent">
                     Sonne
                     <span className="sm:hidden">
                         <br />
@@ -23,7 +21,7 @@ export default function Hero() {
                     type="OnlyScale"
                     duration={0.75}
                     delay={0.5}
-                    className="text-5xl sm:text-7xl md:text-8xl lg:text-[115px]"
+                    className="text-[55px] sm:text-7xl md:text-8xl lg:text-[105px]"
                 >
                     Body Session
                 </Animation>
@@ -41,7 +39,7 @@ export default function Hero() {
                     type="OnlyAppear"
                     duration={1}
                     delay={1.5}
-                    className="text-base sm:text-xl md:text-2xl max-w-lg md:mx-auto rounded-md font-inria py-5"
+                    className="text-base md:text-xl max-w-lg rounded-md font-inria py-5"
                 >
                     <p>
                         Body SDS er et af verdens mest effektive behandlings- og
@@ -55,7 +53,7 @@ export default function Hero() {
                     href="https://sonne-bodybalance.planway.com/?fbclid=IwAR14JyAShdeG4tOl3EPBHtMp_onLHOROfLiVgrawWiVyBwH5xlHJw_SrvtE"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cta-btn"
+                    className="btn"
                 >
                     Book her
                 </Link>

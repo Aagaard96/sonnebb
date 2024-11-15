@@ -31,7 +31,7 @@ export const metadata = {
     description: "Autoriseret Body SDS behandler i Karlslunde. Går du og døjer med stress eller angst? Eller går tingene bare lidt for stærkt opppe i hovedet? Har du en sportsskade der holder dig tilbage fra sport? Kontakt mig, så tar' vi en uforpligtende snak",
     images: [
       {
-        url: "/opengraph-image.png", // Replace with your image URL
+        url: "/opengraph-image-sonnebb.png", // Replace with your image URL
       },
     ],
     url: "sonnebb.netlify.app", // Replace with your page URL
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
       lang="da"
       className={`${inter.variable} ${playfair.variable} ${inria.variable}`}
     >
-      <body className="bg-gradient-to-b from-accentBg to-mainBg text-mainText font-inria">
+      <body className="bg-gradient-to-r from-accentBg to-mainBg text-mainText font-inria">
         <Navigation />
         {children}
         <Footer />

@@ -15,12 +15,12 @@ const topIcons = [
 export default function Symptomer() {
     return (
         <section className="ctn py-16">
-            <div className="text-start max-w-6xl mx-auto lg:text-center text-balance mb-10 lg:mb-20 md:text-lg">
-                <div className="mb-5">
-                    <Animation type="OnlyAppear" as="h2" className="section-heading">
+            <div className="text-center text-balance mb-10 md:text-lg">
+                <div className="heading-container">
+                    <Animation type="OnlyAppear" as="h2" className="section-heading text-center">
                         Body SDS
                     </Animation>
-                    <h3 className="section-main-heading">
+                    <h3 className="section-description text-center">
                         Hvad kan det gøre for mig?
                     </h3>
                 </div>

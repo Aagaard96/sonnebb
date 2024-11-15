@@ -20,15 +20,15 @@ export default function Navigation() {
 
 
     return (
-        <header className="fixed w-full z-50 bg-gray/50 backdrop-blur-md px-5 xl:px-0 capitalize">
-            <div className="flex justify-between items-center max-w-6xl xl:max-w-7xl mx-auto py-4 ">
+        <header className="fixed w-full z-50 bg-black/25 backdrop-blur-lg capitalize py-5">
+            <div className="flex justify-between items-center ctn ">
                 <Link href="/">
                     <Image
                         src="/logo/sonnebb_logo_hvid.svg"
                         alt="PaaTur Logo"
                         height={200}
                         width={200}
-                        className="w-[125px] md:w-[160px]"
+                        className="w-[125px] md:w-[135px]"
                     />
                 </Link>
 
@@ -45,7 +45,7 @@ export default function Navigation() {
                     className={`${isMenuOpen
                         ? "translate-x-0 opacity-100"
                         : "translate-x-full opacity-0"
-                        } transition-transform duration-300 ease-in-out transform md:transform-none md:opacity-100 md:translate-x-0 absolute md:relative top-0 left-0 h-screen md:h-auto w-full md:w-auto bg-gray/95 md:bg-transparent flex flex-col md:flex-row justify-center items-center gap-10 md:gap-4 lg:gap-6 text-baseText font-semibold text-3xl md:text-base lg:text-lg`}
+                        } transition-transform duration-300 ease-in-out transform md:transform-none md:opacity-100 md:translate-x-0 absolute md:relative top-0 left-0 h-screen md:h-auto w-full md:w-auto flex flex-col bg-black/95 md:bg-transparent md:flex-row justify-center items-center gap-10 md:gap-4 lg:gap-6 text-baseText font-semibold text-2xl md:text-base uppercase`}
                 >
                     <Link
                         href="/"
@@ -89,10 +89,12 @@ export default function Navigation() {
                     </Link>
                     <Link
                         href="https://sonne-bodybalance.planway.com/?fbclid=IwAR14JyAShdeG4tOl3EPBHtMp_onLHOROfLiVgrawWiVyBwH5xlHJw_SrvtE"
+                        target="_blank"
                         onClick={closeMenu}
-                       className="cta-btn"
+                        rel="noopener noreferrer"
+                        className="btn"
                     >
-                        booking
+                        Book her
                     </Link>
                 </nav>
             </div>

@@ -11,8 +11,8 @@ export default function Footer() {
             <Link href="/" className="flex items-center justify-left">
               <Image
                 src="/logo/sonnebb_logo_hvid.svg"
-                height={200}
-                width={200}
+                height={150}
+                width={150}
                 className="rounded-none"
                 alt="Sonne Body & Balance Logo"
               />

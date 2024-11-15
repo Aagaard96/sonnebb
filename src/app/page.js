@@ -1,7 +1,7 @@
-import Symptomer from "./sections/symptomer";
-import Testimonials from "./sections/testimonials";
-import Procedure from "./sections/procedure";
-import Hero from "./sections/hero";
+import Symptomer from "../sections/symptomer";
+import Testimonials from "../sections/testimonials";
+import Procedure from "../sections/procedure";
+import Hero from "../sections/hero";
 
 export default function Home() {
   return (

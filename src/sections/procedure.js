@@ -8,11 +8,14 @@ export default function Procedure() {
         <section className="py-16 ctn">
             <div className="flex flex-col lg:flex-row mx-auto justify-between gap-10 ">
                 <div className="flex-1 lg:text-start">
-                    <div className="mb-10">
-                        <Animation type="OnlyAppear" as="h2" className="section-heading">
+                    <div className="heading-container">
+                        <Animation 
+                        type="OnlyAppear" 
+                        as="h2" 
+                        className="section-heading">
                             Body SDS Session
                         </Animation>
-                        <h3 className="section-main-heading">
+                        <h3 className="section-description">
                             Hvordan foregår body sds?
                         </h3>
                     </div>
@@ -41,7 +44,7 @@ export default function Procedure() {
 
                                 <div className="flex flex-1 justify-center relative lg:hidden">
                                     <Image
-                                        src="/skulder.jpg"
+                                        src="/samtale-1.jpg"
                                         alt="An illustration of modern life's pressures"
                                         width={250}  // Adjust width as needed
                                         height={100}
@@ -79,7 +82,7 @@ export default function Procedure() {
                         <Animation as="p" type="OnlyAppear" delay={1} className="text-lg uppercase">
                             Har du mod på at prøve?{" "}
                             <Link
-                                className="font-bold"
+                                className="font-bold text-gray"
                                 href="https://sonne-bodybalance.planway.com/?fbclid=IwAR14JyAShdeG4tOl3EPBHtMp_onLHOROfLiVgrawWiVyBwH5xlHJw_SrvtE"
                             >
                                 Book her
@@ -91,7 +94,7 @@ export default function Procedure() {
                     <div className="flex items-start relative">
                         <Image
                             className="hidden lg:flex img"
-                            src="/samtale.jpg"
+                            src="/samtale-2.jpg"
                             width={400}
                             height={400}
                             alt="BSamtale mellem klient og behandler"
@@ -100,7 +103,7 @@ export default function Procedure() {
                     <div className="flex items-center relative">
                         <Image
                             className="img"
-                            src="/samtale2.jpg"
+                            src="/samtale-1.jpg"
                             width={400}
                             height={400}
                             alt="BSamtale mellem klient og behandler"

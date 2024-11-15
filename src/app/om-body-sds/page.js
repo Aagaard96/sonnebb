@@ -12,9 +12,9 @@ export default function OmBodysds() {
   return (
     <article className="ctn py-36 relative">
       <div className="flex items-end justify-between mb-10">
-        <header className="">
+        <header className="section-container">
           <Animation type="OnlyAppear" as="h2" className="section-heading">BODY SDS</Animation>
-          <h3 className="section-main-heading">hvad er det?</h3>
+          <h3 className="section-description">hvad er det?</h3>
         </header>
         <Image
           className="hidden sm:block w-[100px] md:w-[150px]"
@@ -69,14 +69,14 @@ export default function OmBodysds() {
                 <div className="textCtn flex-1">
                   <p>
                     Body SDS (
-                    <span className="text-brightGreen font-semibold">
+                    <span className="text-gray">
                       Body Self Development&apos;s System
                     </span>
                     ) er en holistisk behandlingsmetode udviklet i Danmark af Ole
                     Kåre Føli i 1980&apos;erne. Metoden kombinerer{" "}
-                    <span className="text-brightGreen font-semibold">
-                      massage, samtale, åndedrætsøvelser og bevægelse
-                    </span>{" "}
+
+                    massage, samtale, åndedrætsøvelser og bevægelse
+
                     for at arbejde med både krop og sind. Systemet sigter mod at
                     frigøre fysiske og følelsesmæssige spændinger, forbedre
                     kropsbevidsthed og fremme generel velvære.
@@ -84,7 +84,7 @@ export default function OmBodysds() {
                 </div>
                 <div className="flex flex-1 justify-center relative lg:hidden h-[300px]">
                   <Image
-                    src="/skulder.jpg"
+                    src="/om-bsds-1.jpg"
                     alt="An illustration of modern life's pressures"
                     width={250}  // Adjust width as needed
                     height={100}
@@ -142,14 +142,14 @@ export default function OmBodysds() {
                 Så har du gået og følt det hele har været lidt mere
                 uoverskueligt i en periode så{" "}
                 <Link
-                  className="text-moss underline hover:text-accentBg"
+                  className="underline hover:text-gray"
                   href="https://sonne-bodybalance.planway.com/?fbclid=IwAR14JyAShdeG4tOl3EPBHtMp_onLHOROfLiVgrawWiVyBwH5xlHJw_SrvtE"
                 >
                   book en tid
                 </Link>
                 , eller{" "}
                 <Link
-                  className="text-brightGreen underline hover:text-accentBg"
+                  className="underline hover:text-gray"
                   href="tel:+4525378860"
                 >
                   kontakt mig
@@ -164,16 +164,16 @@ export default function OmBodysds() {
         <div className="flex items-center flex-col gap-5 lg:flex-1">
           <div className="relative h-[400px] w-[350px] sm:w-4/5 md:h-[600px] lg:w-[400px]">
             <Image
-              src="/leg.jpg"
+              src="/om-bsds-2.jpg"
               fill
               className="img"
               alt="Billede af Morten Sonne der behandler"
             />
           </div>
-          <div className="relative h-[400px] w-[350px] sm:w-4/5 md:h-[600px] lg:w-[400px]">
+          <div className=" hidden lg:block relative h-[400px] w-[350px] sm:w-4/5 md:h-[600px] lg:w-[400px]">
             <Image
               className="img"
-              src="/skulder.jpg"
+              src="/om-bsds-1.jpg"
               width={400}
               height={400}
               alt="Billede af Morten Sonne der behandler"
