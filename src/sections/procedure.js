@@ -9,17 +9,17 @@ export default function Procedure() {
             <div className="flex flex-col lg:flex-row mx-auto justify-between gap-10 ">
                 <div className="flex-1 lg:text-start">
                     <div className="heading-container">
-                        <Animation 
-                        type="OnlyAppear" 
-                        as="h2" 
-                        className="section-heading">
-                            Body SDS Session
+                        <Animation
+                            type="OnlyAppear"
+                            as="h2"
+                            className="section-heading">
+                            Prøv Body SDS
                         </Animation>
                         <h3 className="section-description">
-                            Hvordan foregår body sds?
+                            Hvordan foregår det?
                         </h3>
                     </div>
-                    <div className="space-y-4">
+                    <Animation type="SlideInTop" delay={0.75} as="div" className="space-y-4">
                         <div>
                             <h4 className="p-heading">Indledende samtale:</h4>
                             <div className="textCtn">
@@ -44,7 +44,7 @@ export default function Procedure() {
 
                                 <div className="flex flex-1 justify-center relative lg:hidden">
                                     <Image
-                                        src="/samtale-1.jpg"
+                                        src="/samtale-2.jpg"
                                         alt="An illustration of modern life's pressures"
                                         width={250}  // Adjust width as needed
                                         height={100}
@@ -88,7 +88,7 @@ export default function Procedure() {
                                 Book her
                             </Link>
                         </Animation>
-                    </div>
+                    </Animation>
                 </div>
                 <div className="flex lg:flex-col justify-center lg:gap-5">
                     <div className="flex items-start relative">

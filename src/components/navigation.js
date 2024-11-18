@@ -20,7 +20,7 @@ export default function Navigation() {
 
 
     return (
-        <header className="fixed w-full z-50 bg-black/25 backdrop-blur-lg capitalize py-5">
+        <header className="fixed w-full z-50 bg-black/35 backdrop-blur-lg capitalize py-5">
             <div className="flex justify-between items-center ctn ">
                 <Link href="/">
                     <Image

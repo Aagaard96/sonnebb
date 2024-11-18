@@ -1,7 +1,6 @@
 "use client"; // Ensure it's a client component
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaQuoteRight } from "react-icons/fa";
 import Animation from "@/components/animations/SlideAnimation";
 
 // Sample testimonial data
@@ -13,13 +12,13 @@ const testimonials = [
             "Jeg havde store problemer med kramper og muskelsmerter under triathlon. De dårlige resultater havde sat sig mentalt, og det var blevet en stor udfordring at sætte sig op til et løb af frygt for endnu en fiasko. Gennem samtale, behandling og øvelser blev spændingerne løsnet, og jeg opnåede endelig gode resultater uden kramper og med mentalt overskud hele vejen til mål. Jeg kan klart anbefale et forløb hos Morten.",
     },
     {
-        name: "Tobias Risager",
+        name: "Frederikke Rasmussen",
         title: "Studerende",
         content:
             "Med hjælp fra Morten og hans dygtige arbejde gik jeg op til eksamen og gik derfra med et 12-tal. Morten har fået mig til at tro på mig selv og mine evner. Jeg har lært, at vejrtrækning kan hjælpe en hel del og give mig kontrol over min angst og mit tankemylder. Jeg værdsætter den hjælp, Morten har givet mig, og vil opfordre alle til at få den behandling, han kan tilbyde.",
     },
     {
-        name: "Susanne Christensen",
+        name: "Janne Larsen",
         title: "Ironman-udøver",
         content:
             "Jeg havde aldrig troet, at jeg skulle kunne gennemføre en Ironman igen. Min læg var fuldstændig overspændt, og jeg kunne intet stille op. Efter et forløb hos Morten fik vi løsnet op for det hele, både psykisk og fysisk, og kort efter kunne jeg både sætte personlig rekord på cyklen og i løbet. Jeg er så glad!",
@@ -48,10 +47,10 @@ export default function Testimonials() {
         <article className="py-16 bg-[url('/nakke.jpg')] lg:bg-[url('/reviewsbg.jpg')] bg-no-repeat bg-center bg-cover border-y-4 border-mainText">
             <div className="h-full ctn">
                 <div className="heading-container">
-                    <Animation type="OnlyAppear" as="h2" className="text-2xl md:text-3xl uppercase text-center tracking-tight font-bold text-accent lg:text-gray">
+                    <Animation type="OnlyAppear" as="h2" className="section-heading text-center">
                         anmeldelser
                     </Animation>
-                    <h3 className="section-description text-2xl md:text-3xl lg:text-4xl text-center">
+                    <h3 className="section-description text-center">
                         Mine kunder har sagt:
                     </h3>
                 </div>

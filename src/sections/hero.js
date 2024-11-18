@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Hero() {
     return (
         <header
-            className="h-screen bg-[url('/heromobile.jpg')]  md:bg-[url('/herobg.JPEG')] relative bg-cover bg-center flex items-center"
+            className="h-screen bg-[url('/heromobile.jpg')] relative bg-cover bg-bottom flex items-center"
 
         >
             <div className=" ctn flex flex-col justify-center items-center text-center font-medium font-playfair">

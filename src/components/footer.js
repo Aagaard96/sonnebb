@@ -69,6 +69,9 @@ export default function Footer() {
             />
           </div>
         </div>
+        <div className="text-center opacity-80">
+          <Link href="/https://aaadev.dk" className=" underline text-sm">Hosted af AAA Dev. &copy;</Link>
+        </div>
       </div>
     </footer>
   );

@@ -11,13 +11,13 @@ export const metadata = {
 export default function OmBodysds() {
   return (
     <article className="ctn py-36 relative">
-      <div className="flex items-end justify-between mb-10">
-        <header className="section-container">
+      <div className="flex items-end justify-between">
+        <header className="heading-container">
           <Animation type="OnlyAppear" as="h2" className="section-heading">BODY SDS</Animation>
           <h3 className="section-description">hvad er det?</h3>
         </header>
         <Image
-          className="hidden sm:block w-[100px] md:w-[150px]"
+          className="hidden sm:block w-[100px] md:w-[150px] pb-5"
           src="/logo/ab_logo_nobg_cropped.png"
           width={200}
           height={200}
@@ -30,7 +30,7 @@ export default function OmBodysds() {
             <h4 className="p-heading">
               Kroppens Tilstand Afspejler Dit Velbefindende
             </h4>
-            <div className="textCtn">
+            <Animation as="div" type="SlideInTop" className="textCtn">
               <p>
                 Body SDS har udviklet sig gennem lang tid og bygger på mange
                 gennemprøvede teorier. Den grundlæggende filosofi er simpel:</p>
@@ -40,12 +40,12 @@ export default function OmBodysds() {
                 velbefindende - fysisk og psykisk sundhed er derfor ikke
                 adskilte, men en helhed.
               </p>
-            </div>
+            </Animation>
           </div>
 
           <div>
             <h4 className="p-heading">Moderne Samfunds Belastninger</h4>
-            <div className="textCtn">
+            <Animation as="div" type="SlideInTop" className="textCtn">
               <p>
                 I vores moderne samfund bliver vi udsat for belastninger på
                 mange områder. Mange mennesker bruger deres kroppe forkert,
@@ -60,13 +60,13 @@ export default function OmBodysds() {
                 f.eks. vrede, sårbarhed og nervøsitet, hvilket skaber pres i
                 vores &quot;indre rum&quot;.
               </p>
-            </div>
+            </Animation>
           </div>
           <div>
             <div>
               <h4 className="p-heading">Hvad er Body SDS?</h4>
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-                <div className="textCtn flex-1">
+                <Animation as="div" type="SlideInTop" className="textCtn flex-1">
                   <p>
                     Body SDS (
                     <span className="text-gray">
@@ -81,7 +81,7 @@ export default function OmBodysds() {
                     frigøre fysiske og følelsesmæssige spændinger, forbedre
                     kropsbevidsthed og fremme generel velvære.
                   </p>
-                </div>
+                </Animation>
                 <div className="flex flex-1 justify-center relative lg:hidden h-[300px]">
                   <Image
                     src="/om-bsds-1.jpg"
@@ -99,7 +99,7 @@ export default function OmBodysds() {
             <h4 className="p-heading">
               Behandling af Fysiske og Psykiske Problemer
             </h4>
-            <div className="textCtn">
+            <Animation as="div" type="SlideInTop" className="textCtn">
               <p>
                 Med de metoder, som vores grundlæggere har skabt, hjælper vi
                 klienter med at lindre{" "}
@@ -119,11 +119,11 @@ export default function OmBodysds() {
                 teknikker, mens klienten opfordres til at være opmærksom på
                 deres åndedræt og følelser, som kan dukke op under behandlingen.
               </p>
-            </div>
+            </Animation>
           </div>
           <div>
             <h4 className="p-heading">Helhedsorienteret Sundhed og Velvære</h4>
-            <div className="textCtn">
+            <Animation as="div" type="SlideInTop" className="textCtn flex-1">
               <p>
                 Formålet med vores forskellige discipliner - træning, behandling
                 og udrensning - er at forbedre den enkeltes fysiske og psykiske
@@ -133,11 +133,11 @@ export default function OmBodysds() {
                 udfordringer, og dermed skabe en helhedsorienteret tilgang til
                 sundhed og velvære.
               </p>
-            </div>
+            </Animation>
           </div>
           <div>
             <h4 className="p-heading">Kontakt og Konsultation</h4>
-            <div className="textCtn">
+            <Animation as="div" type="SlideInTop" className="textCtn flex-1">
               <p>
                 Så har du gået og følt det hele har været lidt mere
                 uoverskueligt i en periode så{" "}
@@ -157,7 +157,7 @@ export default function OmBodysds() {
                 , så tager vi en uforpligtende snak om, hvad jeg evt. kan gøre
                 for dig.
               </p>
-            </div>
+            </Animation>
           </div>
         </div>
 

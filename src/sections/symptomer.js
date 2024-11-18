@@ -1,4 +1,6 @@
+"use client"
 import Animation from '@/components/animations/SlideAnimation';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,6 +15,24 @@ const topIcons = [
 
 
 export default function Symptomer() {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2, // Delay between children animations
+            },
+        },
+    };
+
+    const iconVariants = {
+        hidden: { y: 50, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: { type: "spring", stiffness: 80 },
+        },
+    };
     return (
         <section className="ctn py-16">
             <div className="text-center text-balance mb-10 md:text-lg">
@@ -41,26 +61,32 @@ export default function Symptomer() {
                 </p>
             </div>
             <section className="ctn">
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-y-5 lg:gap-y-0 lg:grid-cols-6 place-items-center">
-                    {topIcons.map((feeling, i) => (
-                        <div
-                            key={i}
-                            className="relative w-[150px] md:w-[125px] lg:w-[150px] aspect-square flex flex-col items-center justify-evenly border-2 border-gray rounded-lg text-center"
-                        >
-                            <Image
-                                className="w-3/5 h-3/5 invert"
-                                src={feeling.img}
-                                width={100}
-                                height={100}
-                                alt={feeling.heading}
-                            />
-                            <h4 className="text-sm md:text-base lg:text-xl font-extralight lg:mt-3">
-                                {feeling.heading}
-                            </h4>
-                        </div>
-
-                    ))}
-                </div>
+            <motion.div
+                className="grid grid-cols-2 md:grid-cols-3 gap-y-5 lg:gap-y-0 lg:grid-cols-6 place-items-center"
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible" // Start animation when in view
+                viewport={{ once: true, amount: 0.2 }} // Trigger when 20% of the element is in view
+            >
+                {topIcons.map((feeling, i) => (
+                    <motion.div
+                        key={i}
+                        className="relative w-[125px] sm:w-[150px] aspect-square flex flex-col items-center justify-evenly border-2 border-gray rounded-lg text-center"
+                        variants={iconVariants} // Apply the child animation
+                    >
+                        <Image
+                            className="w-3/5 h-3/5 invert"
+                            src={feeling.img}
+                            width={100}
+                            height={100}
+                            alt={feeling.heading}
+                        />
+                        <h4 className="text-sm md:text-base lg:text-xl font-extralight lg:mt-3">
+                            {feeling.heading}
+                        </h4>
+                    </motion.div>
+                ))}
+            </motion.div>
             </section>
         </section>
     )

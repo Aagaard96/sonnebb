@@ -23,7 +23,7 @@ html {
 /* HEADINGS */
 
 .heading-container {
-  @apply text-center sm:text-start mb-10 text-balance;
+  @apply text-center sm:text-start mb-10 text-balance mx-auto sm:mx-0;
 }
 
 .section-heading {

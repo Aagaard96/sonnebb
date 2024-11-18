@@ -24,8 +24,8 @@ export default function Animation({
       animate: { opacity: 1, x: 0, scale: 1 },
     },
     SlideInTop: {
-      initial: { opacity: 0, y: -50, scale: 0.5 },
-      animate: { opacity: 1, y: 0, scale: 1 },
+      initial: { opacity: 0, y: -30, },
+      animate: { opacity: 1, y: 0, },
     },
     SlideInBottom: {
       initial: { opacity: 0, y: 50, scale: 0.5 },
